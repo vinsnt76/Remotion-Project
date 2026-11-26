@@ -174,7 +174,7 @@ const PackedShot: React.FC = () => {
 export const Scene3Snap: React.FC = () => {
   return (
     <AbsoluteFill style={{ backgroundColor: BB.charcoal }}>
-      <Sequence name="Flash 3" from={0} durationInFrames={8}>
+      <Sequence name="Flash 3" durationInFrames={8}>
         <CountFlash n="3" bg={BB.coral} />
       </Sequence>
       <Sequence name="Flash 2" from={8} durationInFrames={8}>
@@ -193,7 +193,7 @@ export const Scene3Snap: React.FC = () => {
                 "radial-gradient(circle at 50% 50%, rgba(232,93,74,0.28) 0%, rgba(18,18,18,0) 55%)",
             }}
           />
-          <Sequence name="Exploded" from={0} durationInFrames={22}>
+          <Sequence name="Exploded" durationInFrames={22}>
             <ExplodedShot />
           </Sequence>
           <Sequence name="Packed" from={22} durationInFrames={29}>

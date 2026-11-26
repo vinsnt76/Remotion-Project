@@ -141,7 +141,7 @@ export const Scene2PainPoints: React.FC = () => {
           translate: `0px ${joltY}px`,
         }}
       >
-        <Sequence name="Stamp 1" from={0} layout="none">
+        <Sequence name="Stamp 1" layout="none">
           <Stamp
             lead="NO MORE"
             highlight="YOGHURT EXPLOSIONS."

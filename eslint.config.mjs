@@ -16,6 +16,8 @@ export default [
     ignores: [
       "node_modules/**",
       ".next/**",
+      ".agents/**",
+      ".claude/**",
       "out/**",
       "build/**",
       "next-env.d.ts",

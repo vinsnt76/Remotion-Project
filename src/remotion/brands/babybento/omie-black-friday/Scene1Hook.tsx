@@ -169,7 +169,7 @@ export const Scene1Hook: React.FC = () => {
           extrapolateRight: "clamp",
         })}
       />
-      <Sequence name="DON’T BUY" from={0} durationInFrames={10}>
+      <Sequence name="DON’T BUY" durationInFrames={10}>
         <SlamWord lines={["DON’T", "BUY"]} fontSize={isSquare ? 195 : 230} />
       </Sequence>
       <Sequence name="A LUNCHBOX" from={10} durationInFrames={10}>
