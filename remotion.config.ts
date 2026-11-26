@@ -7,6 +7,9 @@ import { Config } from "@remotion/cli/config";
 import { webpackOverride } from "./src/remotion/webpack-override.mjs";
 
 Config.setRspack(true);
-Config.setVideoImageFormat("jpeg");
+// Codec / alpha defaults are set per composition via calculateMetadata:
+// - MontiiCo overlays -> transparent ProRes 4444 (.mov) for OpenShot
+// - BabyBentoOmieBlackFriday -> H.264 (.mp4)
+// (A global ProRes profile would make every H.264 render throw.)
 
 Config.overrideBundlerConfig(webpackOverride);
